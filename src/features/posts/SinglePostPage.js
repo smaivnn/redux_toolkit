@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 const SinglePostPage = () => {
   const { postId } = useParams();
 
+  // select exact Post with postID ( a single post)
   const post = useSelector((state) => selectPostById(state, Number(postId)));
 
   // post not found
